@@ -48,18 +48,20 @@ class ImageSelectionViewController: UIViewController {
         if(selectedImages.isEmpty){
             showPicker()
         }else{
-            DispatchQueue.main.async { [weak self] in 
+            loader.startAnimating()
+            DispatchQueue.global().async { [weak self] in
                 guard let self = self else { return }
-                loader.startAnimating()
                 guard let resultImgPath = viewModel.getCombinedImgPath(forImgs: selectedImages) else {return}
-                let controller = ResultImageViewController(combinedImgPath: resultImgPath)
-                navigationController?.pushViewController(controller, animated: true)
+                navigateToResult(resultImgPath)
             }
         }
     }
     
-    deinit{
-        loader.stopAnimating()
+    private func navigateToResult(_ resultImgPath:URL){
+        DispatchQueue.main.async { [weak self] in
+            let controller = ResultImageViewController(combinedImgPath: resultImgPath)
+            self?.navigationController?.pushViewController(controller, animated: true)
+        }
     }
     
     @IBAction func tapAddMore(_ sender:UIButton){
@@ -86,6 +88,7 @@ class ImageSelectionViewController: UIViewController {
     }
     
     private func capture(sourceType:UIImagePickerController.SourceType){
+        
         let imgPicker = UIImagePickerController()
         imgPicker.delegate = self
         imgPicker.allowsEditing = false

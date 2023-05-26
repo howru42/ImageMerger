@@ -14,7 +14,6 @@ class ResultImageViewController: UIViewController {
     @IBOutlet weak var loader:UIActivityIndicatorView!
     
     var combinedImgPath:URL?
-    lazy var queue = DispatchQueue.main
     
     convenience init(combinedImgPath:URL?) {
         self.init(nibName: "ResultImageViewController", bundle: nil)
@@ -22,12 +21,19 @@ class ResultImageViewController: UIViewController {
     }
     
     fileprivate func updateUI() {
-        if let combinedImgPath = combinedImgPath,let image = try? UIImage(data: Data(contentsOf: combinedImgPath.absoluteURL)) {
-            resultImgView.image = image
-            errorLbl.isHidden = true
-        }else{
+        guard let combinedImgPath = combinedImgPath else {
             errorLbl.isHidden = false
             resultImgView.isHidden = true
+            return
+        }
+        errorLbl.isHidden = true
+        
+        DispatchQueue.global().async {
+            let image = try? UIImage(data: Data(contentsOf: combinedImgPath.absoluteURL))
+            DispatchQueue.main.async {[weak self] in
+                self?.resultImgView.image = image
+                self?.loader.stopAnimating()
+            }
         }
     }
     
@@ -35,8 +41,11 @@ class ResultImageViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Reset", style: .plain, target: self, action: #selector(tappedReset))
         loader.startAnimating()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         updateUI()
-        loader.stopAnimating()
     }
     
     @objc func tappedReset(){
