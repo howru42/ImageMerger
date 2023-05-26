@@ -8,14 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		83226B5A2A20FBAB004AEA01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B592A20FBAB004AEA01 /* AppDelegate.swift */; };
-		83226B5C2A20FBAB004AEA01 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B5B2A20FBAB004AEA01 /* SceneDelegate.swift */; };
-		83226B5E2A20FBAB004AEA01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B5D2A20FBAB004AEA01 /* ViewController.swift */; };
-		83226B612A20FBAB004AEA01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83226B5F2A20FBAB004AEA01 /* Main.storyboard */; };
 		83226B632A20FBAD004AEA01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83226B622A20FBAD004AEA01 /* Assets.xcassets */; };
 		83226B662A20FBAD004AEA01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83226B642A20FBAD004AEA01 /* LaunchScreen.storyboard */; };
-		83226B712A20FBAD004AEA01 /* ImageMergerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B702A20FBAD004AEA01 /* ImageMergerTests.swift */; };
-		83226B7B2A20FBAD004AEA01 /* ImageMergerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B7A2A20FBAD004AEA01 /* ImageMergerUITests.swift */; };
-		83226B7D2A20FBAD004AEA01 /* ImageMergerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B7C2A20FBAD004AEA01 /* ImageMergerUITestsLaunchTests.swift */; };
+		83226B712A20FBAD004AEA01 /* ImageSelectionViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B702A20FBAD004AEA01 /* ImageSelectionViewControllerTest.swift */; };
+		83226B8E2A20FC6D004AEA01 /* ImageSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B8C2A20FC6D004AEA01 /* ImageSelectionViewController.swift */; };
+		83226B8F2A20FC6D004AEA01 /* ImageSelectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83226B8D2A20FC6D004AEA01 /* ImageSelectionViewController.xib */; };
+		83226B912A20FC9E004AEA01 /* ImageSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B902A20FC9E004AEA01 /* ImageSelectionViewModel.swift */; };
+		83226B932A20FCD9004AEA01 /* ImageSelectionViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B922A20FCD9004AEA01 /* ImageSelectionViewModelTest.swift */; };
+		83226B962A210569004AEA01 /* ResultImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B942A210569004AEA01 /* ResultImageViewController.swift */; };
+		83226B972A210569004AEA01 /* ResultImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83226B952A210569004AEA01 /* ResultImageViewController.xib */; };
+		83226B992A210761004AEA01 /* ResultImageViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B982A210761004AEA01 /* ResultImageViewControllerTest.swift */; };
+		83226B9C2A210C07004AEA01 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B9B2A210C07004AEA01 /* Extensions.swift */; };
+		83226B9E2A2110C4004AEA01 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83226B9D2A2110C4004AEA01 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,17 +42,21 @@
 /* Begin PBXFileReference section */
 		83226B562A20FBAB004AEA01 /* ImageMerger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageMerger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83226B592A20FBAB004AEA01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		83226B5B2A20FBAB004AEA01 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		83226B5D2A20FBAB004AEA01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		83226B602A20FBAB004AEA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		83226B622A20FBAD004AEA01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83226B652A20FBAD004AEA01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83226B672A20FBAD004AEA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83226B6C2A20FBAD004AEA01 /* ImageMergerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageMergerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83226B702A20FBAD004AEA01 /* ImageMergerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMergerTests.swift; sourceTree = "<group>"; };
+		83226B702A20FBAD004AEA01 /* ImageSelectionViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectionViewControllerTest.swift; sourceTree = "<group>"; };
 		83226B762A20FBAD004AEA01 /* ImageMergerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageMergerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		83226B7A2A20FBAD004AEA01 /* ImageMergerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMergerUITests.swift; sourceTree = "<group>"; };
-		83226B7C2A20FBAD004AEA01 /* ImageMergerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMergerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		83226B8C2A20FC6D004AEA01 /* ImageSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectionViewController.swift; sourceTree = "<group>"; };
+		83226B8D2A20FC6D004AEA01 /* ImageSelectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSelectionViewController.xib; sourceTree = "<group>"; };
+		83226B902A20FC9E004AEA01 /* ImageSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectionViewModel.swift; sourceTree = "<group>"; };
+		83226B922A20FCD9004AEA01 /* ImageSelectionViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectionViewModelTest.swift; sourceTree = "<group>"; };
+		83226B942A210569004AEA01 /* ResultImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultImageViewController.swift; sourceTree = "<group>"; };
+		83226B952A210569004AEA01 /* ResultImageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultImageViewController.xib; sourceTree = "<group>"; };
+		83226B982A210761004AEA01 /* ResultImageViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultImageViewControllerTest.swift; sourceTree = "<group>"; };
+		83226B9B2A210C07004AEA01 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		83226B9D2A2110C4004AEA01 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +107,9 @@
 		83226B582A20FBAB004AEA01 /* ImageMerger */ = {
 			isa = PBXGroup;
 			children = (
+				83226B9A2A210BFB004AEA01 /* Utils */,
+				83226B892A20FC0E004AEA01 /* Controllers */,
 				83226B592A20FBAB004AEA01 /* AppDelegate.swift */,
-				83226B5B2A20FBAB004AEA01 /* SceneDelegate.swift */,
-				83226B5D2A20FBAB004AEA01 /* ViewController.swift */,
-				83226B5F2A20FBAB004AEA01 /* Main.storyboard */,
 				83226B622A20FBAD004AEA01 /* Assets.xcassets */,
 				83226B642A20FBAD004AEA01 /* LaunchScreen.storyboard */,
 				83226B672A20FBAD004AEA01 /* Info.plist */,
@@ -113,7 +120,9 @@
 		83226B6F2A20FBAD004AEA01 /* ImageMergerTests */ = {
 			isa = PBXGroup;
 			children = (
-				83226B702A20FBAD004AEA01 /* ImageMergerTests.swift */,
+				83226B702A20FBAD004AEA01 /* ImageSelectionViewControllerTest.swift */,
+				83226B922A20FCD9004AEA01 /* ImageSelectionViewModelTest.swift */,
+				83226B982A210761004AEA01 /* ResultImageViewControllerTest.swift */,
 			);
 			path = ImageMergerTests;
 			sourceTree = "<group>";
@@ -121,10 +130,29 @@
 		83226B792A20FBAD004AEA01 /* ImageMergerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				83226B7A2A20FBAD004AEA01 /* ImageMergerUITests.swift */,
-				83226B7C2A20FBAD004AEA01 /* ImageMergerUITestsLaunchTests.swift */,
 			);
 			path = ImageMergerUITests;
+			sourceTree = "<group>";
+		};
+		83226B892A20FC0E004AEA01 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83226B8C2A20FC6D004AEA01 /* ImageSelectionViewController.swift */,
+				83226B8D2A20FC6D004AEA01 /* ImageSelectionViewController.xib */,
+				83226B902A20FC9E004AEA01 /* ImageSelectionViewModel.swift */,
+				83226B942A210569004AEA01 /* ResultImageViewController.swift */,
+				83226B952A210569004AEA01 /* ResultImageViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		83226B9A2A210BFB004AEA01 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				83226B9B2A210C07004AEA01 /* Extensions.swift */,
+				83226B9D2A2110C4004AEA01 /* Observable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +260,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				83226B662A20FBAD004AEA01 /* LaunchScreen.storyboard in Resources */,
+				83226B8F2A20FC6D004AEA01 /* ImageSelectionViewController.xib in Resources */,
 				83226B632A20FBAD004AEA01 /* Assets.xcassets in Resources */,
-				83226B612A20FBAB004AEA01 /* Main.storyboard in Resources */,
+				83226B972A210569004AEA01 /* ResultImageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83226B5E2A20FBAB004AEA01 /* ViewController.swift in Sources */,
+				83226B9C2A210C07004AEA01 /* Extensions.swift in Sources */,
 				83226B5A2A20FBAB004AEA01 /* AppDelegate.swift in Sources */,
-				83226B5C2A20FBAB004AEA01 /* SceneDelegate.swift in Sources */,
+				83226B912A20FC9E004AEA01 /* ImageSelectionViewModel.swift in Sources */,
+				83226B8E2A20FC6D004AEA01 /* ImageSelectionViewController.swift in Sources */,
+				83226B9E2A2110C4004AEA01 /* Observable.swift in Sources */,
+				83226B962A210569004AEA01 /* ResultImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +300,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83226B712A20FBAD004AEA01 /* ImageMergerTests.swift in Sources */,
+				83226B712A20FBAD004AEA01 /* ImageSelectionViewControllerTest.swift in Sources */,
+				83226B992A210761004AEA01 /* ResultImageViewControllerTest.swift in Sources */,
+				83226B932A20FCD9004AEA01 /* ImageSelectionViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +310,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83226B7D2A20FBAD004AEA01 /* ImageMergerUITestsLaunchTests.swift in Sources */,
-				83226B7B2A20FBAD004AEA01 /* ImageMergerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +329,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		83226B5F2A20FBAB004AEA01 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				83226B602A20FBAB004AEA01 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		83226B642A20FBAD004AEA01 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +466,7 @@
 				INFOPLIST_FILE = ImageMerger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +494,7 @@
 				INFOPLIST_FILE = ImageMerger/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

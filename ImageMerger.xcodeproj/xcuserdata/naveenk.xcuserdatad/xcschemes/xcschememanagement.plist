@@ -9,6 +9,29 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ImageMergerTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>83226B552A20FBAB004AEA01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83226B6B2A20FBAD004AEA01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>83226B752A20FBAD004AEA01</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>
